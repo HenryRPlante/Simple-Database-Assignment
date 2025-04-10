@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hospital Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <p id = "extra"></p>
+    <form id = "login">
+      <input type="text" placeholder="username" id="username" name="us">
+      <input type="text" placeholder="re-type username" id="username1" name="us1"><br>
+      <input type="password" placeholder="password" id="password" name="pw"> 
+      <input type = "checkbox" id = "psCheckbox">Show password<br>
+      <input type = "submit" id = "logButton" value = "Login">
+      <input type = "submit" id = "createAccount" value = "Sign up"> 
+      <hr>
+    </form>
+    
+    <div class="doctorView">
+      <!-- doctor and patient show/hide -->
+       <div class="doctorInfo">
+      
+       <button id="docButton">Click to show doctors</button>
+        <p><div id="docOutput">Doctor names will be here</div></p>
+      </div>  
+      <div class="doctorInfo">
+        <button id="patButton">Click to show patients</button>
+        <p><div id="patOutput">Patient names will be here</div></p>
+      </div>
+      <!-- doctor and patient searching -->
+      <div class="doctorInfo">
+        <input type="text" placeholder="enter doctor name or id" id = "docSearch" name="ds">
+        <input type = "submit" id = "docSButton" value = "Search">
+      </div>
+      
+      <div class="doctorInfo">
+        <input type="text" placeholder="enter patient name or id" id = "patSearch" name="ds">
+        <input type = "submit" id = "patSButton" value = "Search">
+      </div>
+      
+      <div class="doctorInfo">
+        <p id = "docSearchOutput">doctor search results will be shown here</p>
+      </div>
+      <div class="doctorInfo">
+        <p id = "patSearchOutput">patient search results will be shown here</p>
+      </div>
+      <!-- doctor and patient adding -->
+      <div class="doctorInfo">
+        <input type="text" placeholder="Enter doctor first name" id = "docFN" name="da">
+        <br>
+        <input type="text" placeholder="Enter doctor last name" id = "docLN" name="da">
+        <br>
+        <label for="docP">Select their profession</label>
+        <select id = "docP">
+          <option value = "select an option">Select an option</option>
+          
+        </select>
+        <input type = "submit" id = "docAButton" value = "Add Doctor">
+      </div>
+      
+      <div class="doctorInfo">
+        <input type="text" placeholder="Enter patient first name" id = "patFN" name="pa">
+        <br>
+        <input type="text" placeholder="Enter patient last name" id = "patLN" name="pa">
+        <br>
+        <label for="patP">Select their symptom</label>
+        <select id = "patP">
+          <option value = "Select An Option">Select an option</option>
+        </select>
+        <input type = "submit" id = "patAButton" value = "Add Patient">
+      </div>
+      
+  
+    </div>
+   
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
