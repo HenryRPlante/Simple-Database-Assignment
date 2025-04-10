@@ -1,0 +1,30 @@
+body {
+  margin: 25px;
+  background-color: powderblue;
+}
+
+.doctorView {
+  visibility: visible;
+  border: 5px solid black;
+  margin: 1rem;
+  padding: 1rem 1rem;
+  width:900px;
+  background-color:lightgray;
+  text-align: center;
+}
+.doctorInfo {
+  display: inline-block;
+  border: 5px solid gray;
+  width: 300px;
+  padding: 1rem 1rem;
+  background-color:lightgray;
+  vertical-align: top;
+}
+input[type="submit"] {
+  display: inline-block;
+  margin: 5px; 
+}
+input[name="us1"]{
+  visibility: hidden;
+}
+
